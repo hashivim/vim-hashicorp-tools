@@ -1,0 +1,14 @@
+*consul.txt*  basic vim/consul integration
+
+Author:  Mark Cornick <https://github.com/markcornick>
+License: MIT license
+Repo:    https://github.com/markcornick/vim-consul
+
+COMMANDS                                        *consul*
+
+This command is only available if consul is in your PATH.
+
+                                                *consul-:consul*
+:Consul [args]         Invoke an arbitrary consul command.
+
+ vim:tw=78:et:ft=help:norl:

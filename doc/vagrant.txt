@@ -1,0 +1,14 @@
+*vagrant.txt*  basic vim/vagrant integration
+
+Author:  Mark Cornick <https://github.com/markcornick>
+License: MIT license
+Repo:    https://github.com/markcornick/vim-vagrant
+
+COMMANDS                                        *vagrant*
+
+This command is only available if vagrant is in your PATH.
+
+                                                *vagrant-:Vagrant*
+:Vagrant [args]         Invoke an arbitrary vagrant command.
+
+ vim:tw=78:et:ft=help:norl:

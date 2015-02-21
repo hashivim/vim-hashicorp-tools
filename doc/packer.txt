@@ -1,0 +1,14 @@
+*packer.txt*  basic vim/packer integration
+
+Author:  Mark Cornick <https://github.com/markcornick>
+License: MIT license
+Repo:    https://github.com/markcornick/vim-packer
+
+COMMANDS                                        *packer*
+
+This command is only available if packer is in your PATH.
+
+                                                *packer-:packer*
+:Packer [args]         Invoke an arbitrary packer command.
+
+ vim:tw=78:et:ft=help:norl:
