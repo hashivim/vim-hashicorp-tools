@@ -1,0 +1,14 @@
+*vaultproject.txt*  basic vim/vault integration
+
+Author:  Mark Cornick <https://github.com/markcornick>
+License: MIT license
+Repo:    https://github.com/markcornick/vim-vaultproject
+
+COMMANDS                                        *vaultproject*
+
+This command is only available if vault is in your PATH.
+
+                                                *vaultproject-:vault
+:Vault [args]         Invoke an arbitrary vault command.
+
+ vim:tw=78:et:ft=help:norl:

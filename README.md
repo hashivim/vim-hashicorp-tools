@@ -9,10 +9,11 @@ The individual plugins are:
 * [vim-packer](https://github.com/markcornick/vim-packer)
 * [vim-terraform](https://github.com/markcornick/vim-terraform)
 * [vim-vagrant](https://github.com/markcornick/vim-vagrant)
+* [vim-vaultproject](https://github.com/markcornick/vim-vaultproject)
 
 Please see the individual repositories above for further information
 on each one. This repository is created by brute-force combining the
-other four, so please file any issues or pull requests against the
+other five, so please file any issues or pull requests against the
 individual repos, not this one. Thanks.
 
 ## Installation

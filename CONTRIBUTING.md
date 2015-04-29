@@ -7,6 +7,7 @@ repositories:
 * [vim-packer](https://github.com/markcornick/vim-packer)
 * [vim-terraform](https://github.com/markcornick/vim-terraform)
 * [vim-vagrant](https://github.com/markcornick/vim-vagrant)
+* [vim-vaultproject](https://github.com/markcornick/vim-vaultproject)
 
 Please file any issues or pull requests against the individual repos,
 not this one. Thanks.
