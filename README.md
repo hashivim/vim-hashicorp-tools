@@ -21,7 +21,7 @@ individual repos, not this one. Thanks.
 With [pathogen.vim](https://github.com/tpope/vim-pathogen) just do:
 
     cd ~/.vim/bundle
-    git clone git://github.com/markcornick/vim-hashicorp-tools.git
+    git clone https://github.com/markcornick/vim-hashicorp-tools.git
 
 If you prefer to use something besides pathogen, go ahead.
 
