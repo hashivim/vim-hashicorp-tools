@@ -1,0 +1,14 @@
+*nomadproject.txt*  basic vim/nomad integration
+
+Author:  Mark Cornick <https://github.com/markcornick>
+License: MIT license
+Repo:    https://github.com/markcornick/vim-nomadproject
+
+COMMANDS                                        *nomadproject*
+
+This command is only available if nomad is in your PATH.
+
+                                                *nomadproject-:nomad
+:Nomad [args]         Invoke an arbitrary nomad command.
+
+ vim:tw=78:et:ft=help:norl:

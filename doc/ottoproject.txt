@@ -1,0 +1,14 @@
+*ottoproject.txt*  basic vim/otto integration
+
+Author:  Mark Cornick <https://github.com/markcornick>
+License: MIT license
+Repo:    https://github.com/markcornick/vim-ottoproject
+
+COMMANDS                                        *ottoproject*
+
+This command is only available if otto is in your PATH.
+
+                                                *ottoproject-:otto
+:Otto [args]         Invoke an arbitrary otto command.
+
+ vim:tw=78:et:ft=help:norl:
