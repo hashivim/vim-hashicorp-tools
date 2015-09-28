@@ -8,37 +8,39 @@ let g:loaded_vaultproject = 1
 
 function! s:commands(A, L, P)
   return join([
+  \ "delete",
+  \ "path-help",
+  \ "read",
+  \ "renew",
+  \ "revoke",
+  \ "server",
+  \ "status",
+  \ "write",
   \ "audit-disable",
   \ "audit-enable",
   \ "audit-list",
   \ "auth",
   \ "auth-disable",
   \ "auth-enable",
-  \ "delete",
   \ "init",
   \ "key-status",
   \ "mount",
+  \ "mount-tune",
   \ "mounts",
-  \ "path-help",
   \ "policies",
   \ "policy-delete",
   \ "policy-write",
-  \ "read",
   \ "rekey",
   \ "remount",
-  \ "renew",
-  \ "revoke",
   \ "rotate",
   \ "seal",
-  \ "server",
-  \ "status",
+  \ "ssh",
   \ "token-create",
   \ "token-renew",
   \ "token-revoke",
   \ "unmount",
   \ "unseal",
-  \ "version",
-  \ "write"
+  \ "version"
   \ ], "\n")
 endfunction
 
