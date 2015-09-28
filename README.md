@@ -1,9 +1,3 @@
-# Unmaintained
-
-I'm no longer using Vim regularly, and am not updating my various Vim
-plugins. Please contact me if you would like to take over maintenance
-of any or all of them. Thanks!
-
 # vim-hashicorp-tools
 
 This plugin combines all of my Vim plugins supporting the various
