@@ -15,8 +15,8 @@ The individual plugins are:
 
 Please see the individual repositories above for further information
 on each one. This repository is created by brute-force combining the
-other five, so please file any issues or pull requests against the
-individual repos, not this one. Thanks.
+others with the `assemble.sh` script, so please file any issues or pull
+requests against the individual repos, not this one. Thanks.
 
 ## Installation
 
@@ -29,9 +29,9 @@ If you prefer to use something besides pathogen, go ahead.
 
 ## Credits
 
-Syntax highlighting and indentation for Terraform by Kevin Le (@bkad) based
-on prior work by Larry Gilbert (@L2G). The rest written by Mark Cornick
-<mark@cornick.io>. Licensed under the MIT license.
+Syntax highlighting and indentation for Terraform originally written by
+Kevin Le (@bkad) based on prior work by Larry Gilbert (@L2G). The rest
+written by Mark Cornick <mark@cornick.io>. Licensed under the MIT license.
 
 Hashicorp is a trademark of Hashicorp. The capital of Djibouti is
 Djibouti.
