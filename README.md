@@ -5,13 +5,13 @@ This plugin combines all of my Vim plugins supporting the various
 are likely to use more than one or two of them and want a one-stop shop.
 The individual plugins are:
 
-*   [vim-consul](https://github.com/markcornick/vim-consul)
-*   [vim-nomadproject](https://github.com/markcornick/vim-nomadproject)
-*   [vim-ottoproject](https://github.com/markcornick/vim-ottoproject)
-*   [vim-packer](https://github.com/markcornick/vim-packer)
-*   [vim-terraform](https://github.com/markcornick/vim-terraform)
-*   [vim-vagrant](https://github.com/markcornick/vim-vagrant)
-*   [vim-vaultproject](https://github.com/markcornick/vim-vaultproject)
+-   [vim-consul](https://github.com/markcornick/vim-consul)
+-   [vim-nomadproject](https://github.com/markcornick/vim-nomadproject)
+-   [vim-ottoproject](https://github.com/markcornick/vim-ottoproject)
+-   [vim-packer](https://github.com/markcornick/vim-packer)
+-   [vim-terraform](https://github.com/markcornick/vim-terraform)
+-   [vim-vagrant](https://github.com/markcornick/vim-vagrant)
+-   [vim-vaultproject](https://github.com/markcornick/vim-vaultproject)
 
 Please see the individual repositories above for further information
 on each one. This repository is created by brute-force combining the
