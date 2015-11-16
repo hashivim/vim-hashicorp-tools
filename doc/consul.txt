@@ -1,7 +1,7 @@
 *consul.txt*  basic vim/consul integration
 
 Author:  Mark Cornick <https://github.com/markcornick>
-License: MIT license
+License: ISC license
 Repo:    https://github.com/markcornick/vim-consul
 
 COMMANDS                                        *consul*

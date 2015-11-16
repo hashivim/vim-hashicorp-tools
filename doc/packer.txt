@@ -1,7 +1,7 @@
 *packer.txt*  basic vim/packer integration
 
 Author:  Mark Cornick <https://github.com/markcornick>
-License: MIT license
+License: ISC license
 Repo:    https://github.com/markcornick/vim-packer
 
 COMMANDS                                        *packer*

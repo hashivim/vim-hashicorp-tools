@@ -1,7 +1,7 @@
 *ottoproject.txt*  basic vim/otto integration
 
 Author:  Mark Cornick <https://github.com/markcornick>
-License: MIT license
+License: ISC license
 Repo:    https://github.com/markcornick/vim-ottoproject
 
 COMMANDS                                        *ottoproject*

@@ -1,7 +1,7 @@
 *vaultproject.txt*  basic vim/vault integration
 
 Author:  Mark Cornick <https://github.com/markcornick>
-License: MIT license
+License: ISC license
 Repo:    https://github.com/markcornick/vim-vaultproject
 
 COMMANDS                                        *vaultproject*
