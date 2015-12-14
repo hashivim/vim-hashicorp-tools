@@ -1,5 +1,5 @@
 " ottoproject.vim - basic vim/otto integration
-" Maintainer: Mark Cornick <https://github.com/markcornick>
+" Maintainer: HashiVim <https://github.com/hashivim>
 
 if exists("g:loaded_ottoproject") || v:version < 700 || &cp || !executable('otto')
   finish

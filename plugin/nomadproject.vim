@@ -1,5 +1,5 @@
 " nomadproject.vim - basic vim/nomad integration
-" Maintainer: Mark Cornick <https://github.com/markcornick>
+" Maintainer: HashiVim <https://github.com/hashivim>
 
 if exists("g:loaded_nomadproject") || v:version < 700 || &cp || !executable('nomad')
   finish

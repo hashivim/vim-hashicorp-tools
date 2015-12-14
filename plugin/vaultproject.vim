@@ -1,5 +1,5 @@
 " vaultproject.vim - basic vim/vault integration
-" Maintainer: Mark Cornick <https://github.com/markcornick>
+" Maintainer: HashiVim <https://github.com/hashivim>
 
 if exists("g:loaded_vaultproject") || v:version < 700 || &cp || !executable('vault')
   finish

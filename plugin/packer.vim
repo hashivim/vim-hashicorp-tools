@@ -1,5 +1,5 @@
 " packer.vim - basic vim/packer integration
-" Maintainer: Mark Cornick <https://github.com/markcornick>
+" Maintainer: HashiVim <https://github.com/hashivim>
 
 if exists("g:loaded_packer") || v:version < 700 || &cp || !executable('packer')
   finish

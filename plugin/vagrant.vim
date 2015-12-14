@@ -1,5 +1,5 @@
 " vagrant.vim - basic vim/vagrant integration
-" Maintainer: Mark Cornick <https://github.com/markcornick>
+" Maintainer: HashiVim <https://github.com/hashivim>
 
 if exists("g:loaded_vagrant") || v:version < 700 || &cp || !executable('vagrant')
   finish

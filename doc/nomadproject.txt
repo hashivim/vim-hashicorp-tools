@@ -1,8 +1,8 @@
 *nomadproject.txt*  basic vim/nomad integration
 
-Author:  Mark Cornick <https://github.com/markcornick>
+Author:  HashiVim <https://github.com/hashivim>
 License: ISC license
-Repo:    https://github.com/markcornick/vim-nomadproject
+Repo:    https://github.com/hashivim/vim-nomadproject
 
 COMMANDS                                        *nomadproject*
 

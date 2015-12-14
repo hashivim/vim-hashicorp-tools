@@ -1,5 +1,5 @@
 " consul.vim - basic vim/consul integration
-" Maintainer: Mark Cornick <https://github.com/markcornick>
+" Maintainer: HashiVim <https://github.com/hashivim>
 
 if exists("g:loaded_consul") || v:version < 700 || &cp || !executable('consul')
   finish
