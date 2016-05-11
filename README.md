@@ -36,9 +36,9 @@ If you prefer to use something besides pathogen, go ahead.
 
 ## Credits
 
-Syntax highlighting and indentation for Terraform originally written by Kevin Le
-(@bkad) based on prior work by Larry Gilbert (@L2G). The rest originally written
-by Mark Cornick <https://www.markcornick.com/>. Licensed under the ISC license.
+See individual repositories for credits for the code contained within
+them. The code to assemble them in this repo was written by Mark Cornick
+<https://www.markcornick.com/>. Licensed under the ISC license.
 
 Hashicorp is a trademark of Hashicorp. The capital of Djibouti is
 Djibouti.
