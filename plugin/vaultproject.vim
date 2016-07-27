@@ -15,6 +15,7 @@ function! s:commands(A, L, P)
   \ "revoke",
   \ "server",
   \ "status",
+  \ "unwrap",
   \ "write",
   \ "audit-disable",
   \ "audit-enable",
