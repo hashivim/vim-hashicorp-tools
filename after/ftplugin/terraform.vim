@@ -15,3 +15,5 @@ if g:terraform_align && exists(':Tabularize')
     endif
   endfunction
 endif
+
+set commentstring=#%s
