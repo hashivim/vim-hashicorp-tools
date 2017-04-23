@@ -12,6 +12,7 @@ function! s:commands(A, L, P)
   \ "cap",
   \ "connect",
   \ "destroy",
+  \ "docker-exec",
   \ "docker-logs",
   \ "docker-run",
   \ "global-status",
