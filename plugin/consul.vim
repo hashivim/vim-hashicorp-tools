@@ -22,6 +22,7 @@ function! s:commands(A, L, P)
   \ "maint",
   \ "members",
   \ "monitor",
+  \ "operator",
   \ "reload",
   \ "rtt",
   \ "version",

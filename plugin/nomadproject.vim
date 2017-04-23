@@ -16,6 +16,7 @@ function! s:commands(A, L, P)
   \ "fs",
   \ "init",
   \ "inspect",
+  \ "logs",
   \ "node-drain",
   \ "node-status",
   \ "plan",
