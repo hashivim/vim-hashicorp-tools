@@ -15,7 +15,7 @@ The individual plugins are:
 -   [vim-consul](https://github.com/hashivim/vim-consul)
 -   [vim-nomadproject](https://github.com/hashivim/vim-nomadproject)
 -   [vim-ottoproject](https://github.com/hashivim/vim-ottoproject)
--   [vim-packer](https://github.com/hashivim/vim-packer)
+-   [vim-packer](https://github.com/hashivim/vim-packer) [![](https://img.shields.io/badge/Supports%20Packer%20Version-1.0.0-blue.svg)](https://github.com/hashicorp/packer/blob/v1.0.0/CHANGELOG.md)
 -   [vim-terraform](https://github.com/hashivim/vim-terraform) [![](https://img.shields.io/badge/Supports%20Terraform%20Version-%3E%3D0.9.3-blue.svg)](https://github.com/hashicorp/terraform/blob/v0.9.3/CHANGELOG.md)
 -   [vim-vagrant](https://github.com/hashivim/vim-vagrant) [![](https://img.shields.io/badge/Supports%20Vagrant%20Version-1.9.2-blue.svg)](https://github.com/hashicorp/vagrant/blob/v1.9.2/CHANGELOG.md)
 -   [vim-vaultproject](https://github.com/hashivim/vim-vaultproject)
