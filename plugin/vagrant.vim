@@ -40,6 +40,7 @@ function! s:commands(A, L, P)
   \ "status",
   \ "suspend",
   \ "up",
+  \ "validate",
   \ "version"
   \ ], "\n")
 endfunction
