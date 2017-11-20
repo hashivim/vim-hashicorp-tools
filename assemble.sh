@@ -23,7 +23,7 @@ for REPO in consul nomadproject ottoproject packer terraform vagrant vaultprojec
 
     # Hashicorp tools ASSEMBLE!
     echo "${BLD}INFO: Assembling ../vim-${REPO} into this repository.${RST}"
-    rsync --archive --exclude=.git --exclude=*.md --exclude=LICENSE --exclude=*.rb --exclude=*.sh ../vim-${REPO}/ .
+    rsync --archive --exclude=.git --exclude=*.md --exclude=LICENSE --exclude=*.rb --exclude=*.sh --exclude=test/* --exclude=Makefile --exclude=.travis.yml ../vim-${REPO}/ .
 done
 
 echo "${BLD}INFO: Done!${RST}"
