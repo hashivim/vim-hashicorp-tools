@@ -33,6 +33,7 @@ for REPO in consul nomadproject ottoproject packer terraform vagrant vaultprojec
         --exclude=Makefile \
         --exclude=test/ \
         --exclude=vader.vim/ \
+        --exclude=terraform-providers/ \
         ../vim-${REPO}/ .
 done
 
