@@ -11,7 +11,6 @@ function! s:commands(A, L, P)
   \ "build",
   \ "fix",
   \ "inspect",
-  \ "push",
   \ "validate",
   \ "version"
   \ ], "\n")

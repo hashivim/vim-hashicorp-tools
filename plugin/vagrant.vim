@@ -10,7 +10,7 @@ function! s:commands(A, L, P)
   return join([
   \ "box",
   \ "cap",
-  \ "connect",
+  \ "cloud",
   \ "destroy",
   \ "docker-exec",
   \ "docker-logs",
@@ -18,6 +18,7 @@ function! s:commands(A, L, P)
   \ "global-status",
   \ "halt",
   \ "help",
+  \ "hostmanager",
   \ "init",
   \ "list-commands",
   \ "login",
@@ -33,15 +34,17 @@ function! s:commands(A, L, P)
   \ "resume",
   \ "rsync",
   \ "rsync-auto",
-  \ "share",
   \ "snapshot",
   \ "ssh",
   \ "ssh-config",
   \ "status",
   \ "suspend",
   \ "up",
+  \ "upload",
   \ "validate",
-  \ "version"
+  \ "version",
+  \ "winrm",
+  \ "winrm-config"
   \ ], "\n")
 endfunction
 
