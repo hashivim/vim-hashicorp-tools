@@ -26,6 +26,7 @@ function! s:commands(A, L, P)
   \ "path-help",
   \ "plugin",
   \ "policy",
+  \ "print",
   \ "secrets",
   \ "ssh",
   \ "token"
