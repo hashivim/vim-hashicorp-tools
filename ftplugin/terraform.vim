@@ -1,71 +1,72 @@
 " terraform.vim - basic vim/terraform integration
 " Maintainer: HashiVim <https://github.com/hashivim>
 
-set formatoptions-=t
-
-if exists("g:loaded_terraform") || v:version < 700 || &cp || !executable('terraform')
+if exists('b:did_ftplugin') || v:version < 700 || &compatible
   finish
 endif
-let g:loaded_terraform = 1
+let b:did_ftplugin = 1
 
-if !exists("g:terraform_fmt_on_save") || !filereadable(expand("%:p"))
-  let g:terraform_fmt_on_save = 0
+let s:cpo_save = &cpoptions
+set cpoptions&vim
+
+" j is a relatively recent addition; silence warnings when setting it.
+setlocal formatoptions-=t formatoptions+=croql
+silent! setlocal formatoptions+=j
+let b:undo_ftplugin = 'setlocal formatoptions<'
+
+if !has('patch-7.4.1142')
+    " Include hyphens as keyword characters so that a keyword appearing as
+    " part of a longer name doesn't get partially highlighted.
+    setlocal iskeyword+=-
+    let b:undo_ftplugin .= ' iskeyword<'
 endif
 
-function! s:commands(A, L, P)
-  return join([
-  \ "apply",
-  \ "console",
-  \ "destroy",
-  \ "env",
-  \ "fmt",
-  \ "get",
-  \ "graph",
-  \ "import",
-  \ "init",
-  \ "output",
-  \ "plan",
-  \ "providers",
-  \ "push",
-  \ "refresh",
-  \ "show",
-  \ "taint",
-  \ "untaint",
-  \ "validate",
-  \ "version",
-  \ "workspace",
-  \ "debug",
-  \ "force-unlock",
-  \ "state"
-  \ ], "\n")
-endfunction
+if get(g:, 'terraform_fold_sections', 0)
+  setlocal foldmethod=expr
+  setlocal foldexpr=terraform#folds()
+  setlocal foldlevel=1
+  setlocal foldtext=terraform#foldText()
+  let b:undo_ftplugin .= ' foldmethod< foldexpr< foldlevel< foldtext<'
+endif
 
-" Adapted from vim-hclfmt:
-" https://github.com/fatih/vim-hclfmt/blob/master/autoload/fmt.vim
-function! terraform#fmt()
-  let l:curw = winsaveview()
-  let l:tmpfile = tempname() . ".tf"
-  call writefile(getline(1, "$"), l:tmpfile)
-  let output = system("terraform fmt -write " . l:tmpfile)
-  if v:shell_error == 0
-    try | silent undojoin | catch | endtry
-    call rename(l:tmpfile, resolve(expand("%")))
-    silent edit!
-    let &syntax = &syntax
-  else
-    echo output
-    call delete(l:tmpfile)
-  endif
-  call winrestview(l:curw)
-endfunction
+" Set the commentstring
+let &l:commentstring = get(g:, 'terraform_commentstring', '#%s')
+let b:undo_ftplugin .= ' commentstring<'
 
-augroup terraform
-  autocmd!
-  autocmd BufEnter *
-        \ command! -nargs=+ -complete=custom,s:commands Terraform execute '!terraform '.<q-args>. ' -no-color'
-  autocmd BufEnter * command! -nargs=0 TerraformFmt call terraform#fmt()
-  if get(g:, "terraform_fmt_on_save", 1)
+" Re-map the space bar to fold and unfold
+if get(g:, 'terraform_remap_spacebar', 0)
+  nnoremap <buffer> <space> za
+  onoremap <buffer> <space> <C-C>za
+  vnoremap <buffer> <space> zf
+  let b:undo_ftplugin .= '|unmap <buffer> <space>'
+endif
+
+if get(g:, 'terraform_align', 0) && exists(':Tabularize')
+  inoremap <buffer> <silent> = =<Esc>:call terraform#align()<CR>a
+  let b:undo_ftplugin .= '|iunmap <buffer> ='
+endif
+
+let &cpoptions = s:cpo_save
+unlet s:cpo_save
+
+if !executable('terraform')
+  finish
+endif
+
+let s:cpo_save = &cpoptions
+set cpoptions&vim
+
+command! -nargs=+ -complete=customlist,terraform#commands -buffer Terraform execute '!terraform '.<q-args>. ' -no-color'
+command! -nargs=0 -buffer TerraformFmt call terraform#fmt()
+let b:undo_ftplugin .= '|delcommand Terraform|delcommand TerraformFmt'
+
+if get(g:, 'terraform_fmt_on_save', 0)
+  augroup vim.terraform.fmt
+    autocmd!
     autocmd BufWritePre *.tf call terraform#fmt()
     autocmd BufWritePre *.tfvars call terraform#fmt()
-  endif
-augroup END
+  augroup END
+endif
+
+let &cpoptions = s:cpo_save
+unlet s:cpo_save
