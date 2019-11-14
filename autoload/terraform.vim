@@ -1,3 +1,6 @@
+" Ensure no conflict with arguments from the environment
+let $TF_CLI_ARGS_fmt=''
+
 function! terraform#fmt()
   if !filereadable(expand('%:p'))
     return
@@ -26,31 +29,32 @@ function! terraform#align()
   endif
 endfunction
 
-function! terraform#commands(A, L, P)
-  return [
-  \ 'apply',
-  \ 'console',
-  \ 'destroy',
-  \ 'env',
-  \ 'fmt',
-  \ 'get',
-  \ 'graph',
-  \ 'import',
-  \ 'init',
-  \ 'output',
-  \ 'plan',
-  \ 'providers',
-  \ 'refresh',
-  \ 'show',
-  \ 'taint',
-  \ 'untaint',
-  \ 'validate',
-  \ 'version',
-  \ 'workspace',
-  \ '0.12upgrade',
-  \ 'debug',
-  \ 'force-unlock',
-  \ 'push',
-  \ 'state'
+function! terraform#commands(ArgLead, CmdLine, CursorPos)
+  let l:commands = [
+    \ 'apply',
+    \ 'console',
+    \ 'destroy',
+    \ 'env',
+    \ 'fmt',
+    \ 'get',
+    \ 'graph',
+    \ 'import',
+    \ 'init',
+    \ 'output',
+    \ 'plan',
+    \ 'providers',
+    \ 'refresh',
+    \ 'show',
+    \ 'taint',
+    \ 'untaint',
+    \ 'validate',
+    \ 'version',
+    \ 'workspace',
+    \ '0.12upgrade',
+    \ 'debug',
+    \ 'force-unlock',
+    \ 'push',
+    \ 'state'
   \ ]
+  return join(l:commands, "\n")
 endfunction
